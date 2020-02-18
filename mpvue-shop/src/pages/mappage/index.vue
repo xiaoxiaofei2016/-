@@ -44,7 +44,7 @@ export default {
         iconHeight: 32,
         success: function (data) {
           console.log(data, 'data')
-          let maker = [
+          let marker = [
             {
               id: data[0].id,
               latitude: data[0].latitude,
@@ -53,7 +53,7 @@ export default {
               height: data[0].height
             }
           ]
-          _this.makers = maker
+          _this.markers = marker
           _this.longitude = data[0].longitude
           _this.latitude = data[0].latitude
         },
